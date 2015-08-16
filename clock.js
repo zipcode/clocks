@@ -1,5 +1,5 @@
-console.log("Load");
 var clocks = [];
+window.clocks = clocks;
 
 var width = document.rootElement.width.baseVal.value;
 var height = document.rootElement.height.baseVal.value;
@@ -79,6 +79,7 @@ function tick() {
 }
 
 function main() {
+  console.log("Firing main");
   document.querySelectorAll("[clock]").map(function (elem) {
     var movements = elem.getAttribute("clock");
     var clock = new Clock(elem);
@@ -96,6 +97,12 @@ function main() {
   });
 
   window.requestAnimationFrame(tick);
+
+  console.log("Running", clocks);
 };
 
-document.rootElement.addEventListener("load", main);
+document.addEventListener("readystatechange", function (state) {
+  if (document.readyState == "complete") {
+    main();
+  }
+});
