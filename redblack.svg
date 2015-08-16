@@ -21,7 +21,32 @@
      xlink:href="clock.js"
      id="script3003" />
   <defs
-     id="defs4" />
+     id="defs4">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4193">
+      <path
+         inkscape:transform-center-y="-10.317165"
+         inkscape:transform-center-x="1.0020943"
+         d="M 72.000004,236 9.881821,188.16032 -64.743106,212.21074 -38.440439,138.34957 -84.374124,74.809034 -5.9999985,76.999998 40.23635,13.679363 62.371556,88.894631 136.88088,113.30086 72.18706,157.59549 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="1.7430429"
+         sodipodi:arg1="1.1147243"
+         sodipodi:r2="59.03389"
+         sodipodi:r1="118.06778"
+         sodipodi:cy="130"
+         sodipodi:cx="20"
+         sodipodi:sides="5"
+         id="path4195"
+         style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="star"
+         transform="matrix(0.19839095,0.98012297,-0.98012297,0.19839095,426.35,106.06588)"
+         clip-path="none"
+         clock="-minutes" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -29,11 +54,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
+     inkscape:zoom="0.5"
      inkscape:cx="238.27014"
-     inkscape:cy="265.72037"
+     inkscape:cy="305.72037"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer6"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="720"
@@ -96,12 +121,13 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Minutes"
      inkscape:groupmode="layer"
-     id="layer1"
+     id="layer7"
+     inkscape:label="Background"
      style="display:inline"
      sodipodi:insensitive="true">
     <g
+       style="display:inline"
        id="g2991"
        class="second"
        clock="minutes"
@@ -128,6 +154,49 @@
          style="fill:#000000;fill-opacity:1;stroke:none"
          sodipodi:type="arc" />
     </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Star"
+     sodipodi:insensitive="true">
+    <g
+       clip-path="url(#clipPath4193)"
+       style="stroke:#000000;stroke-width:8;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="g4184"
+       class=""
+       clock="minutes"
+       transform="matrix(0,-1,1,0,-4.3541194e-7,600)">
+      <path
+         clock="minutes"
+         sodipodi:type="arc"
+         style="fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:8;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path4186"
+         sodipodi:cx="300"
+         sodipodi:cy="300"
+         sodipodi:rx="425"
+         sodipodi:ry="425"
+         d="m 725,300 a 425,425 0 1 1 -850,0 425,425 0 1 1 850,0 z" />
+      <path
+         sodipodi:open="true"
+         sodipodi:end="3.1415927"
+         sodipodi:start="0"
+         d="m 725,300 a 425,425 0 1 1 -850,-2e-5"
+         sodipodi:ry="425"
+         sodipodi:rx="425"
+         sodipodi:cy="300"
+         sodipodi:cx="300"
+         id="path4188"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:8;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+    </g>
+  </g>
+  <g
+     inkscape:label="Minutes"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     sodipodi:insensitive="true">
     <g
        id="g4349"
        clock="minutes"
@@ -322,7 +391,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer4"
-     inkscape:label="Face digits path">
+     inkscape:label="Face digits path"
+     sodipodi:insensitive="true">
     <g
        style="display:inline"
        transform="matrix(2,0,0,2,-600,-300)"
